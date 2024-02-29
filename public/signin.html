@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <form onsubmit="sub(event)" action="#">
+        <img id="cartoon" src="./Images/pngegg (19) copy 2.png" alt="">
+        <h2>Sign In</h2>
+        <input id="email" type="email" placeholder="Enter Your Email">
+        <div class="pass">
+            <img onclick="private_()" id="show" src="./Images/show.png" alt="">
+            <input id="pass" type="password" placeholder="Password">
+        </div>
+        <button onclick="login()">Login</button>
+        <button onclick="googleSingin()" id="googleSignin"><img width="40" src="../public/Images/google.png" alt=""><p>Login with Google</p></button>
+        <button onclick="appleSingin()" id="googleSignin"><img width="40" src="../public/Images/apple.png" alt=""><p>Login with AppleID</p></button>
+
+        <a style="text-decoration: none;" href="forgotpass.html"><p style="color: white;">Forgot password?</p></a>
+        <a href="signup.html" style="text-decoration: none; color: white;">Don't have an account? Sign Up!</a>
+    </form>
+</body>
+</html>
+<script src="signin.js"></script>

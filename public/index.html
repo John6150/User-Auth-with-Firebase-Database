@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button id="signOut" onclick="signOut()">Sign Out</button>
+    <h1 id="username"></h1>
+    <form onsubmit="addProduct(event)" action="m.facebook.com">
+        <h3>Add a New Product</h3><br><br>
+        <input type="text" id="name" placeholder="Product Name"><br><br>
+        <input onkeypress="noOnly(event)" type="text" id="price" placeholder="Price"><br><br>
+        <input onkeypress="noOnly(event)" type="text" id="qty" placeholder="Quantity Available"><br><br>
+        <textarea name="" id="desc" cols="30" rows="10"  placeholder="Description"></textarea><br><br>
+        <label for="proImg">Upload Product Image</label>
+        <input type="file" id="proImg"><br><br>
+        <button onclick="addProduct(event)" type="button" id="btn">Add Product</button>
+    </form>
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+
+  </script>

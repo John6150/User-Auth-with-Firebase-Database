@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+</head>
+
+</head>
+
+<body>
+    <form onsubmit="sub_(event)" action="m.facebook.com">
+    <img id="cartoon" src="Images/pngegg (19).png" alt="">
+
+        <h3>SIGN UP TO <u>GET STARTED</u></h3>
+
+        <input id="fname" type="text" placeholder="First Name">
+        <input id="lname" type="text" placeholder="Last Name">
+        <input id="email" type="text" placeholder="Email">
+        <input onkeypress="noOnly(event)" id="phone" type="text" placeholder="phone">
+        <select name="" id="gender">
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <input id="dp" type="file">
+        <div class="pass">
+            <img onclick="private_()" id="show" src="../public/Images/show.png" alt="">
+            <!-- <img onclick="private_()" id="hide" src="/Images/hide.png" alt=""> -->
+            <input id="pass" type="password" placeholder="Password">
+        </div>
+        <div class="cpass">
+            <img onclick="private_2()" id="show2" src="../public/Images/show.png" alt="">
+            <!-- <img onclick="private_()" id="hide2" src="/Images/hide.png" alt=""> -->
+            <input id="cpass" type="password" placeholder="Confirm Password">
+        </div>
+
+        <button onclick="sub()" type="button">Submit</button>
+    </form>
+    <a href="signin.html">Already have an account</a>
+</body>
+
+</html>
+<script src="signup.js"></script>
